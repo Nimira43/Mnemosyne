@@ -12,3 +12,7 @@
 textarea::placeholder {
   color: #eee;
 } 
+
+button {
+  transition: all 0.3s ease-in;
+}
