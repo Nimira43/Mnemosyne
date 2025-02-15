@@ -1,42 +1,44 @@
-export const languages = [
+const languages = [
   { 
     code: 'en',
-    name: 'English'
+    name: 'ENGLISH'
   },
   { 
     code: 'de',
-    name: 'German'
+    name: 'GERMAN'
   },
   { 
     code: 'fr',
-    name: 'French'
+    name: 'FRENCH'
   },
   { 
     code: 'es',
-    name: 'Spanish'
+    name: 'SPANISH'
   },
   { 
     code: 'it',
-    name: 'Italian'
+    name: 'ITALIAN'
   },
   { 
     code: 'ja',
-    name: 'Japanese'
-  },
-  { 
-    code: 'zh-CN',
-    name: 'Chinese (Simplified)'
+    name: 'JAPANESE'
   },
   { 
     code: 'pt',
-    name: 'Portuguese'
+    name: 'PORTUGESE'
+  },
+  { 
+    code: 'zh-CN',
+    name: 'CHINESE (SIMPLIFIED)'
   },
   {
     code: 'ur',
-    name: 'Urdu'
+    name: 'URDU'
   },
   {
     code: 'hi',
-    name: 'Hindi'
+    name: 'HINDI'
   }
 ]
+
+export default languages

@@ -1,8 +1,16 @@
-import { language } from "./languages"
+import languages from './languages.js'
 
 const voiceSelect = document.getElementById('voiceSelect')
 const playButton = document.getElementById('playButton')
+const languageSelect = document.getElementById('languageSelect')
 const textInput = document.querySelector('textarea')
+
+languages.forEach(({ code, name }) => {
+  const option = document.createElement('option')
+  option.value = code
+  option.textContent = name
+  languageSelect.appendChild(option)
+})
 
 let voices = []
 
