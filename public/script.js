@@ -22,5 +22,7 @@ loadVoices()
 
 playButton.addEventListener('click', () => {
   const utterance = new SpeechSynthesisUtterance(textInput.value)
+  const selectedVoice = voices[voiceSelect.value]
+  if (selectedVoice) utterance.voice = selectedVoice
   speechSynthesis.speak(utterance)
 })
