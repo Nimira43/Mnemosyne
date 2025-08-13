@@ -82,7 +82,14 @@ body {
   justify-content: space-between;
 } 
 
-select {
+.body-form-grid {}
+.body-form-grid-item {}
+.body-form-checkbox-name {}
+.body-form-checkbox-container {}
+.body-form-checkbox {}
+.body-form-checkmark {}
+
+.body-form-select {
   appearance: none;
   background-color: var(--main);
   border: none;
@@ -93,7 +100,7 @@ select {
   margin-left: 0.5rem;
 }
 
-select:focus {
+.body-form-select:focus {
   outline: none;
 }
 
