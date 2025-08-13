@@ -25,10 +25,14 @@ export function Body() {
             />
           </div>
           <div className='body-form-grid-item'>
-            <span>Symbols</span>
-            <input 
-              type="checkbox" 
-            />
+            <span className='body-form-checkbox-name'>Symbols</span>
+            <label className="body-form-checkbox-container">
+              <input 
+                className="body-form-checkbox" 
+                type='checkbox'
+              />
+              <span class="body-form-checkmark"></span>
+            </label>
           </div>
         </div>
         <button>Invoke</button>
