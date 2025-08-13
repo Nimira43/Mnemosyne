@@ -9,7 +9,10 @@ export function Body() {
     symbols: false
   })
 
-  function handleChange(event) {}
+  function handleChange(event) {
+    const { name, value, type, checked } = event.target
+    setFormData(prevFormData => {})
+  }
 
   return (
     <div className='body-container'>
