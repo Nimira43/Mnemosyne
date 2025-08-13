@@ -1,5 +1,7 @@
 export function Body() {
   return (
-    <div>Body</div>
+    <form>
+      Form
+    </form>
   )
 }
