@@ -71,37 +71,39 @@ body {
   margin-top: 2.5rem;
 }
 
-/* .body-form {
-  display: flex;
-  justify-content: space-between;
-}  */
+.body-form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.0rem
+}
 
-/* .body-form-grid {}
-.body-form-grid-item {} */
+.body-form-grid-item {
+  gap: 0.3rem;
+  display: flex;
+}
 
 .body-form-checkbox-name {
   margin-right: 0.5rem;
 }
 
 .body-form-select {
+  /* display: inline-block; */
+  outline: none;
+  box-shadow: none;
   appearance: none;
   color: var(--light);
   background-color: var(--main);
-  border: none;
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
   padding: 0.16rem;
   border-radius: 50%;
-}
-
-.body-form-select:focus {
-  outline: none;
+  border: none;
 }
 
 .body-form-checkbox-container {
-  display: inline-block;
-  margin-right: 0.5rem;
+  /* display: inline-block; */
+  /* margin-right: 0.5rem; */
   position: relative;
   cursor: pointer;
   width: 1.5rem;
