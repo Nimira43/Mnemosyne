@@ -9,6 +9,8 @@ export function Body() {
     symbols: false
   })
 
+  function handleChange(event) {}
+
   return (
     <div className='body-container'>
       <form>
