@@ -1,6 +1,10 @@
 const App = () => {
   return ( 
-    <div>Mnemosyne</div>
+    <div>
+      <h1 className='logo'>Mnemosyne</h1>
+      <hr />
+      <p>Password Generator</p>
+    </div>
    )
 }
  

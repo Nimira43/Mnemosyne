@@ -28,7 +28,8 @@ body {
 }
 
 .logo {
-  font-family: 'Rubik Glitch'
+  font-family: 'Rubik Glitch';
+  color: var(--main);
 }
 
 .uppercase {
