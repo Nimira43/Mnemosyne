@@ -27,7 +27,12 @@ export function Body() {
         <div className='body-form-wrapper'>
           <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Size</span>
-            <select className='body-form-select'>
+            <select 
+              className='body-form-select'
+              name='size'   
+              value={formData.size}
+              onChange={handleChange}
+            >
               <option>8</option>
               <option>12</option>
               <option>16</option>
