@@ -81,10 +81,10 @@ body {
   display: flex;
   justify-content: space-between;
 } 
-
+/* 
 .body-form-grid {}
 .body-form-grid-item {}
-.body-form-checkbox-name {}
+.body-form-checkbox-name {} */
 
 .body-form-checkbox-container {
   display: inline-block;
@@ -99,7 +99,18 @@ body {
   width: 0;
   height: 0;
 }
-.body-form-checkbox {}
+
+.body-form-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ff4500;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
 .body-form-checkmark {}
 
 .body-form-select {
