@@ -1,5 +1,7 @@
 import { FormItem } from './FormItem'
 
+
+
 export function Body() {
   return (
     <div className='body-container'>
@@ -14,7 +16,8 @@ export function Body() {
               <option>20</option>
             </select>
           </div>
-          <div className='body-form-item-wrapper'>
+
+          {/* <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Uppercase</span>
             <label className="body-form-checkbox-container">
               <input 
@@ -40,7 +43,26 @@ export function Body() {
               />
               <span class="body-form-checkmark"></span>
             </label>
-          </div>
+          </div> */}
+          <FormItem
+            label='Uppercase'
+            name='uppercase'
+            checked={formData.uppercase}
+            onChange={handleChange}
+          />
+          <FormItem
+            label='Numbers'
+            name='numbers'
+            checked={formData.numbers}
+            onChange={handleChange}
+          />
+          <FormItem
+            label='Symbols'
+            name='symbols'
+            checked={formData.symbols}
+            onChange={handleChange}
+          />
+
         </div>
         <div className='body-form-btn-wrapper'>
           <button className='body-form-btn'>Invoke</button>
