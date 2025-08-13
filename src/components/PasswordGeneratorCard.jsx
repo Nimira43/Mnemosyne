@@ -1,6 +1,6 @@
 const PasswordGeneratorCard = () => {
   return ( 
-    <div>Password Generator Card</div>
+    <div>Card</div>
    )
 }
  
