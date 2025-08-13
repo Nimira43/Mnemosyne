@@ -16,7 +16,6 @@ export function Body() {
             <span className='body-form-checkbox-name'>Uppercase</span>
             <label className="body-form-checkbox-container">
               <input 
-                className="body-form-checkbox" 
                 type='checkbox'
               />
               <span class="body-form-checkmark"></span>
@@ -25,8 +24,7 @@ export function Body() {
           <div className='body-form-grid-item'>
             <span className='body-form-checkbox-name'>Numbers</span>
             <label className="body-form-checkbox-container">
-              <input 
-                className="body-form-checkbox" 
+              <input  
                 type='checkbox'
               />
               <span class="body-form-checkmark"></span>
@@ -36,7 +34,6 @@ export function Body() {
             <span className='body-form-checkbox-name'>Symbols</span>
             <label className="body-form-checkbox-container">
               <input 
-                className="body-form-checkbox" 
                 type='checkbox'
               />
               <span class="body-form-checkmark"></span>
@@ -45,7 +42,6 @@ export function Body() {
         </div>
         <button>Invoke</button>
       </form>
-    </div>
-    
+    </div>   
   )
 }
