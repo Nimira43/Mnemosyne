@@ -40,7 +40,10 @@ export function Body() {
             </label>
           </div>
         </div>
-        <button className='body-form-btn'>Invoke</button>
+        <div className='body-form-btn-wrapper'>
+          <button className='body-form-btn'>Invoke</button>
+        </div>
+
       </form>
     </div>   
   )
