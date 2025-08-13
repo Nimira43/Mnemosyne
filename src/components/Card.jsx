@@ -4,7 +4,8 @@ import { Header } from './Header'
 
 export function Card() {
   return (
-    <div>
+    <div className='container'>
+      <div className='main'></div>
       <Header />
       <Body />
       <Footer />
