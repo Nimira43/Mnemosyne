@@ -27,10 +27,6 @@ body {
   color: var(--grey-dark);
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 .app-container {
   height: 100vh;
   width: 100%;
@@ -75,10 +71,10 @@ body {
   margin-top: 2.5rem;
 }
 
-.body-form {
+/* .body-form {
   display: flex;
   justify-content: space-between;
-} 
+}  */
 
 /* .body-form-grid {}
 .body-form-grid-item {} */
@@ -138,6 +134,25 @@ body {
   height: 0.7rem;
   background-color: var(--light);
   border-radius: 50%;
+}
+
+.body-form-btn {
+  margin-top: 1rem;
+  color: var(--main);
+  background-color: transparent;
+  border: 0.2rem solid var(--main);
+  border-radius: 0.25rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.body-form-btn:hover {
+  color: var(--light);
+  background-color: var(--main);
 }
 
 .footer-container {
