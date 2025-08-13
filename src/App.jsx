@@ -2,7 +2,7 @@ import { Card } from './components/Card'
 
 const App = () => {
   return ( 
-    <div>
+    <div className='app-container'>
       <Card />
     </div>
    )
