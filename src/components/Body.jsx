@@ -39,34 +39,6 @@ export function Body() {
               <option>20</option>
             </select>
           </div>
-
-          {/* <div className='body-form-item-wrapper'>
-            <span className='body-form-checkbox-name'>Uppercase</span>
-            <label className="body-form-checkbox-container">
-              <input 
-                type='checkbox'
-              />
-              <span class="body-form-checkmark"></span>
-            </label>
-          </div>
-          <div className='body-form-item-wrapper'>
-            <span className='body-form-checkbox-name'>Numbers</span>
-            <label className="body-form-checkbox-container">
-              <input  
-                type='checkbox'
-              />
-              <span class="body-form-checkmark"></span>
-            </label>
-          </div>
-          <div className='body-form-item-wrapper'>
-            <span className='body-form-checkbox-name'>Symbols</span>
-            <label className="body-form-checkbox-container">
-              <input 
-                type='checkbox'
-              />
-              <span class="body-form-checkmark"></span>
-            </label>
-          </div> */}
           <FormItem
             label='Uppercase'
             name='uppercase'
@@ -85,7 +57,6 @@ export function Body() {
             checked={formData.symbols}
             onChange={handleChange}
           />
-
         </div>
         <div className='body-form-btn-wrapper'>
           <button className='body-form-btn'>Invoke</button>
