@@ -12,6 +12,6 @@ export function FormItem({ label, name, checked, onChange }) {
         <span className='body-form-checkmark'></span>
       </label>
     </div>
-  );
+  )
 }
 

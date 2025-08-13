@@ -1,3 +1,5 @@
+import { FormItem } from './FormItem'
+
 export function Body() {
   return (
     <div className='body-container'>
