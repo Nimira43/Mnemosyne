@@ -1,7 +1,5 @@
-const Body = () => {
-  return ( 
+export function Body() {
+  return (
     <div>Body</div>
-   )
+  )
 }
- 
-export default Body
