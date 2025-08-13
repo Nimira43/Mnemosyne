@@ -1,9 +1,9 @@
 export function Body() {
   return (
     <div className='body-container'>
-      <form className='body-form'>
-        <div className='body-form-grid'>
-          <div className='body-form-grid-item'>
+      <form>
+        <div className='body-form-wrapper'>
+          <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Size</span>
             <select className='body-form-select'>
               <option>8</option>
@@ -12,7 +12,7 @@ export function Body() {
               <option>20</option>
             </select>
           </div>
-          <div className='body-form-grid-item'>
+          <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Uppercase</span>
             <label className="body-form-checkbox-container">
               <input 
@@ -21,7 +21,7 @@ export function Body() {
               <span class="body-form-checkmark"></span>
             </label>
           </div>
-          <div className='body-form-grid-item'>
+          <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Numbers</span>
             <label className="body-form-checkbox-container">
               <input  
@@ -30,7 +30,7 @@ export function Body() {
               <span class="body-form-checkmark"></span>
             </label>
           </div>
-          <div className='body-form-grid-item'>
+          <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Symbols</span>
             <label className="body-form-checkbox-container">
               <input 

@@ -72,7 +72,7 @@ body {
   margin-top: 1.5rem;
 }
 
-.body-form-grid {
+.body-form-wrapper {
   display: flex;
   gap: 0.75rem;
   justify-content: center;
@@ -80,7 +80,7 @@ body {
   flex-wrap: wrap;
 }
 
-.body-form-grid-item {
+.body-form-item-wrapper {
   display: flex;
   align-items: center;
   gap: 0.1rem; 
