@@ -36,14 +36,18 @@ body {
   text-transform: uppercase;
 }
 
-.container {
+.card-container {
   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
 }
 
-.main {
+.card-main {
   background-color: var(--dark);
   color: var(--main);
   border-radius: 3px 3px 0 0;
+  padding: 40px;
+}
+
+.footer-container {
   padding: 40px;
 }

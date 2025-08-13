@@ -4,11 +4,12 @@ import { Header } from './Header'
 
 export function Card() {
   return (
-    <div className='container'>
-      <div className='main'></div>
+    <div className='card-container'>
       <Header />
       <Body />
-      <Footer />
+      <div className='card-main'>
+        <Footer />
+      </div>
     </div>
   )
 }
