@@ -27,8 +27,17 @@ body {
   color: var(--grey-dark);
 }
 
-.logo {
+.header-title {
+
+}
+
+.logo-symbol {
+  
+}
+
+.logo-text {
   font-family: 'Rubik Glitch';
+  font-weight: 20px;
   color: var(--main);
 }
 
