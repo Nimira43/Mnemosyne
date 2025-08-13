@@ -1,9 +1,14 @@
 import { FormItem } from './FormItem'
 import { useState } from 'react'
 
-
-
 export function Body() {
+  const [formData, setFormData] = useState({
+    size: '8',
+    uppercase: false,
+    numbers: false,
+    symbols: false
+  })
+
   return (
     <div className='body-container'>
       <form>
