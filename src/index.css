@@ -27,6 +27,33 @@ body {
   color: var(--grey-dark);
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.4rem;
+  width: 100%;
+  max-width: 31.25rem;
+  margin: 1rem;
+}
+
+.card-main {
+  background-color: var(--dark);
+  color: var(--main);
+  border-radius: 0.4rem 0.4rem 0 0;
+  padding: 2.5rem;
+}
+
 .header-title {
   font-size: 1.5rem;
   color: var(--main);  
@@ -44,30 +71,6 @@ body {
   padding-top: 0.5rem
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
-.app-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-container {
-  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-}
-
-.card-main {
-  background-color: var(--dark);
-  color: var(--main);
-  border-radius: 3px 3px 0 0;
-  padding: 40px;
-}
-
 .footer-container {
-  padding: 40px;
+  padding: 2.5rem;
 }
