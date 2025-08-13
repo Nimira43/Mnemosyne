@@ -11,7 +11,14 @@ export function Body() {
 
   function handleChange(event) {
     const { name, value, type, checked } = event.target
-    setFormData(prevFormData => {})
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [name]: type === 'checkbox'
+          ? checked 
+          : value
+      }
+    })
   }
 
   return (
