@@ -31,6 +31,8 @@ export function Body() {
         formData[key] = value
       })
       console.log(formData)
+
+      
   }
 
   return (
