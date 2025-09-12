@@ -32,7 +32,7 @@ export function Body(props) {
       })
       console.log(formData)
 
-      let generatedPassword = 'Generated Password'
+      let generatedPassword = Math.random()
       props.onSubmit(generatedPassword)
   }
 
