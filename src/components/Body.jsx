@@ -26,9 +26,11 @@ export function Body() {
 
     let formData = {}
 
-    const form = new FormData(e.currentTarget)
+    new FormData(e.currentTarget)
       .forEach((value, key) => {
+        formData[key] = value
       })
+      console.log(formData)
   }
 
   return (
