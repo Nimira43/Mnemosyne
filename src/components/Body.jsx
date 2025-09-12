@@ -1,7 +1,7 @@
 import { FormItem } from './FormItem'
 import { useState } from 'react'
 
-export function Body() {
+export function Body(props) {
   const [formData, setFormData] = useState({
     size: '8',
     uppercase: false,
@@ -32,7 +32,8 @@ export function Body() {
       })
       console.log(formData)
 
-      
+      let generatedPassword = 'Generated Password'
+      props.onSubmit(generatedPassword)
   }
 
   return (

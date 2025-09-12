@@ -10,7 +10,7 @@ export function Card() {
     <div className='card-container'>
       <div className='card-main'>
         <Header />
-        <Body />
+        <Body onSubmit={setPassword}/>
       </div>
       <Footer />
     </div>
