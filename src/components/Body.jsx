@@ -21,9 +21,13 @@ export function Body() {
     })
   }
 
+  const submit = () => {
+
+  }
+
   return (
     <div className='body-container'>
-      <form>
+      <form onSubmit={}>
         <div className='body-form-wrapper'>
           <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Size</span>
@@ -59,7 +63,12 @@ export function Body() {
           />
         </div>
         <div className='body-form-btn-wrapper'>
-          <button className='body-form-btn'>Invoke</button>
+          <button 
+            type='submit'
+            className='body-form-btn'
+          >
+            Invoke
+          </button>
         </div>
       </form>
     </div>   
