@@ -23,9 +23,12 @@ export function Body() {
 
   const submit = (e) => {
     e.preventDefault()
-    console.log("Submit")
+
+    let formData = {}
+
     const form = new FormData(e.currentTarget)
-    console.log(form)
+      .forEach((value, key) => {
+      })
   }
 
   return (
