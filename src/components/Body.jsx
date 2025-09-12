@@ -21,13 +21,16 @@ export function Body() {
     })
   }
 
-  const submit = () => {
-
+  const submit = (e) => {
+    e.preventDefault()
+    console.log("Submit")
+    const form = new FormData(e.currentTarget)
+    console.log(form)
   }
 
   return (
     <div className='body-container'>
-      <form onSubmit={}>
+      <form onSubmit={submit}>
         <div className='body-form-wrapper'>
           <div className='body-form-item-wrapper'>
             <span className='body-form-checkbox-name'>Size</span>
