@@ -12,7 +12,7 @@ export function Card() {
         <Header />
         <Body onSubmit={setPassword}/>
       </div>
-      <Footer />
+      <Footer password={password} />
     </div>
   )
 }

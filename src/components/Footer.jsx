@@ -1,9 +1,9 @@
 import { MdContentPaste } from 'react-icons/md'
 
-export function Footer() {
+export function Footer(props) {
   return (
     <div className='footer-container'>
-      <h3>Password</h3>
+      <h3>{props.password}</h3>
       <MdContentPaste />
     </div>
   )
