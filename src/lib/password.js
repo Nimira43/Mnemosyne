@@ -25,5 +25,6 @@ export function generatePassword(config) {
     alphabet += SYMBOLS
     result += getRandonChar(SYMBOLS)
   }
+  console.log(result)
   return result
 }
