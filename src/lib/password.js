@@ -1,5 +1,5 @@
 export function generatePassword(config) {
-  let result = ''
+  let result = 'Test'
 
   return result
 }
