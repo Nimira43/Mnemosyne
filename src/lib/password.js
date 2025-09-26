@@ -1,4 +1,6 @@
-function getRandonChar(text) {
+
+
+function getRandomChar(text) {
   return text[Math.floor(Math.random() * text.length)]
 }
 
@@ -12,28 +14,28 @@ export function generatePassword(config) {
   const SYMBOLS = '!@#$%^&*()_-+=[]{}|;:\'",.<>?/\\'
 
   let alphabet = LOWERCASE
-  result += getRandonChar(UPPERCASE)
+  result += getRandomChar(UPPERCASE)
 
   if (config.uppercase) {
     alphabet += UPPERCASE
-    result += getRandonChar(UPPERCASE)
+    result += getRandomChar(UPPERCASE)
     charToSkip++
   }
 
   if (config.numbers) {
     alphabet += NUMBERS
-    result += getRandonChar(NUMBERS)
+    result += getRandomChar(NUMBERS)
     charToSkip++
   }
 
   if (config.symbols) {
     alphabet += SYMBOLS
-    result += getRandonChar(SYMBOLS)
+    result += getRandomChar(SYMBOLS)
     charToSkip++
   }
 
   for (let i = charToSkip; i < Number(config.size); i++) {
-    result += getRandonChar(alphabet)
+    result += getRandomChar(alphabet)
   }
   console.log(result)
   return result
