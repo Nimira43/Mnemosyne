@@ -5,16 +5,25 @@ function getRandonChar(text) {
 export function generatePassword(config) {
   let result = ''
   
-  const lowercase = 'abcdefghijklmnopqrstuvwxyz'
-  const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  const numbers = '0123456789'
-  const symbols = '!@#$%^&*()_-+=[]{}|;:\'",.<>?/\\'
+  const LOWERCASE = 'abcdefghijklmnopqrstuvwxyz'
+  const UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  const NUMBERS = '0123456789'
+  const SYMBOLS = '!@#$%^&*()_-+=[]{}|;:\'",.<>?/\\'
 
-  let alphabet = lowercase
+  let alphabet = LOWERCASE
+  result += getRandonChar(UPPERCASE)
 
   if (config.uppercase) {
-    alphabet += uppercase
-    getRandonChar(uppercase)
+    alphabet += UPPERCASE
+    result += getRandonChar(UPPERCASE)
+  }
+  if (config.numbers) {
+    alphabet += NUMBERS
+    result += getRandonChar(NUMBERS)
+  }
+  if (config.symbols) {
+    alphabet += SYMBOLS
+    result += getRandonChar(SYMBOLS)
   }
   return result
 }
