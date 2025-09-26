@@ -63,7 +63,7 @@ export function Body(props) {
           <FormItem
             label='Numbers'
             name='numbers'
-            checked={formData.numbers}
+            checked={formData.numbers} 
             onChange={handleChange}
           />
           <FormItem
