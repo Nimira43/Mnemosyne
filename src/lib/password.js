@@ -1,4 +1,6 @@
-
+function shuffle(array) {
+  
+}
 
 function getRandomChar(text) {
   return text[Math.floor(Math.random() * text.length)]
