@@ -44,9 +44,7 @@ export function generatePassword(config) {
     charToSkip++
   }
 
-  for (let i = charToSkip; i < Number(config.size); i++) {
-    result += getRandomChar(alphabet)
-  }
+  for (let i = charToSkip; i < Number(config.size); i++) result += getRandomChar(alphabet)
   
   return shuffle(result).join('')
 }

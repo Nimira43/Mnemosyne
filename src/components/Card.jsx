@@ -4,7 +4,7 @@ import { Footer } from './Footer'
 import { Header } from './Header'
 
 export function Card() {
-  const [password, setPassword] = useState('TestPassword4321')
+  const [password, setPassword] = useState('Ready to Generate')
 
   return (
     <div className='card-container'>

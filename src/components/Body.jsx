@@ -25,9 +25,7 @@ export function Body(props) {
   const submit = (e) => {
     e.preventDefault()
     let formData = {}
-    new FormData(e.currentTarget).forEach((value, key) => {
-      formData[key] = value
-    })
+    new FormData(e.currentTarget).forEach((value, key) => formData[key] = value)
     props.onSubmit(generatePassword(formData))
   }
 

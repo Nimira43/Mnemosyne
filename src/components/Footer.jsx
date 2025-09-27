@@ -1,9 +1,7 @@
 import { MdContentPaste } from 'react-icons/md'
 
 export function Footer(props) {
-  function saveInClipboard() {
-    navigator.clipboard.writeText(props.password)
-  }
+  const saveInClipboard = () => navigator.clipboard.writeText(props.password)
   
   return (
     <div 
