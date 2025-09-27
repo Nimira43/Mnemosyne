@@ -1,5 +1,9 @@
-function shuffle(array) {
-  
+function shuffle(arr) {
+  const array = [...arr]
+
+  for (let i = array.length - 1; i > 0; i--) {
+    
+  }
 }
 
 function getRandomChar(text) {
